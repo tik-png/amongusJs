@@ -13,4 +13,4 @@ cd amongusJs
 npm install
 ```
 
-After installation finishes you can use node app.js to start the bot.
+After installation finishes replace the TOKEN on ```client.login('TOKEN');``` with your bot token you can use node app.js to start the bot.
