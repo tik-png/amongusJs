@@ -29,8 +29,9 @@ client.on('message', msg => {
                             { name: ':map: Codigo', value: code, inline: true },
                         )
                         .setFooter('Publica o teu jogo aqui, escreve !link (codigo do jogo)');
-                    msg.reply(gameEmbed).then(msg.delete());
+                    msg.reply(gameEmbed);
                 }).catch(console.error);
+        msg.delete();
     }
 });
 
