@@ -12,3 +12,5 @@ git clone https://github.com/tik-png/amongusJs
 cd amongusJs
 npm install
 ```
+
+After installation finishes you can use node app.js to start the bot.
