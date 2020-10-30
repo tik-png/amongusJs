@@ -33,7 +33,7 @@ client.on('message', msg => {
                         .setFooter('Publica o teu jogo aqui, escreve !link (codigo do jogo)');
                     msg.reply(gameEmbed);
                 }).catch(console.error);
-        msg.delete();
+        msg.delete().catch(console.error);
     }
 });
 
