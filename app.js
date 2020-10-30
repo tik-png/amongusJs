@@ -1,5 +1,7 @@
 /**
   * !link (code) - Sends an embed message containing: a code provided via argument1 and a link to join, the name and the user count of the invoker voice channel
+  * permissions required on invoker text channel:  ['READ_MESSAGES', 'MANAGE_MESSAGES', 'EMBED_LINKS', 'SEND_MESSAGES']
+  * permissions required on invoker voice channel: ['CREATE_INVITE']
 */
 const Discord = require('discord.js');
 const client = new Discord.Client();
