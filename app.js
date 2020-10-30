@@ -26,7 +26,7 @@ client.on('message', msg => {
                         .setDescription("[**Clica para entrar**](" + invite.url + ")")
                         //.setThumbnail('https://i.imgur.com/wSTFkRM.png') // Do we really need this?
                         .addFields(
-                            { name: ':loud_sound: Canal', value: "Lobby " + msg.member.voice.channel.name.match(/^\d+|\d+\b|\d+(?=\w)/g)[0], inline: true },
+                            { name: ':loud_sound: Lobby', value: msg.member.voice.channel.name.match(/^\d+|\d+\b|\d+(?=\w)/g)[0], inline: true },
                             { name: ':man_shrugging: Jogadores', value: msg.member.voice.channel.members.size + "/" + msg.member.voice.channel.userLimit, inline: true },
                             { name: ':map: Codigo', value: code, inline: true },
                         )
