@@ -1,3 +1,6 @@
+/**
+  * !link (code) - Sends an embed message containing: a code provided via argument1 and a link to join, the name and the user count of the invoker voice channel
+*/
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -19,7 +22,7 @@ client.on('message', msg => {
                         .setColor('#0099ff')
                         .setAuthor(msg.member.user.username + " precisa de tripulantes!", msg.member.user.avatarURL())
                         .setDescription("[**Clica para entrar**](" + invite.url + ")")
-                        //.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+                        //.setThumbnail('https://i.imgur.com/wSTFkRM.png') // Do we really need this?
                         .addFields(
                             { name: ':loud_sound: Canal', value: "Lobby " + msg.member.voice.channel.name.match(/^\d+|\d+\b|\d+(?=\w)/g)[0], inline: true },
                             { name: ':man_shrugging: Jogadores', value: msg.member.voice.channel.members.size + "/" + msg.member.voice.channel.userLimit, inline: true },
