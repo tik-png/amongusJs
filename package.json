@@ -1,0 +1,27 @@
+{
+  "name": "amongusjs",
+  "version": "1.0.0",
+  "description": "code snippets for discordjs related to AmongUs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tik-png/amongusJs.git"
+  },
+  "keywords": [
+    "amongus",
+    "discordjs",
+    "node"
+  ],
+  "author": "tik-png",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tik-png/amongusJs/issues"
+  },
+  "homepage": "https://github.com/tik-png/amongusJs#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  }
+}
